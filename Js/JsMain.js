@@ -1,10 +1,14 @@
-const EmailKlik = document.getElementById("EmailKlik");
-EmailKlik.addEventListener("click", function() {
+// const EmailKlik = document.getElementById("EmailKlik");
+// EmailKlik.addEventListener("click", function() {
+//     const email = "willyschool743@gmail.com";
+//      const gmailUrl =
+//             "https://mail.google.com/mail/?view=cm&fs=1" +
+//             "&to=" + encodeURIComponent(email) 
+//     window.open(gmailUrl, "_blank");
+
+    document.getElementById("EmailKlik").addEventListener("click", function () {
     const email = "willyschool743@gmail.com";
-     const gmailUrl =
-            "https://mail.google.com/mail/?view=cm&fs=1" +
-            "&to=" + encodeURIComponent(email) 
-    window.open(gmailUrl, "_blank");
+    window.location.href = `mailto:${email}`;
 
     // const email = "willyschool743@gmail.com";
     // const subject = "Hello";
