@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Profesional</title>
+    <link rel="stylesheet" href="CSSPORT/Portofolio.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <h1>Willy Wijaya</h1>
+      <!-- <p>Microsoft Office Specialist | Designer | Programmer</p> -->
+      <!-- <div id="google_translate_element"> Translate </div>
+      <script>
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement(
+            {
+              pageLanguage: "id",
+              includedLanguages: "id,en,zh-CN",
+            },
+            "google_translate_element",
+          );
+        }
+      </script>
+      <script>
+        setInterval(() => {
+          const banner = document.querySelector(".goog-te-banner-frame");
+          if (banner) {
+            banner.style.display = "none";
+          }
+
+          document.body.style.top = "0px";
+        }, 500);
+      </script>
+      <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+    </header>
+
+    <!-- NAVBAR -->
+    <nav>
+      <a href="#about">Tentang</a>
+      <a href="#skills">Keahlian</a>
+      <a href="#experience">Project</a>
+      <a href="#certificates">Sertifikat</a>
+      <a href="MainCV.html"> My Curriculum Vitae </a>
+    </nav>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>
+          Students who like arts, languages, and science. Change ideas and
+          imagination into modern and useful work.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+
+      <div class="skills-wrapper">
+        <div class="grid">
+          <div class="card skill-card active" data-skill="all">✨ All</div>
+
+          <div class="card skill-card" data-skill="office">
+            📊 Microsoft Office
+          </div>
+
+          <div class="card skill-card" data-skill="design">
+            🎨 Grapich Design
+          </div>
+
+          <div class="card skill-card" data-skill="web">💻 Web Programming</div>
+
+          <div class="card skill-card" data-skill="languages">💻 languages</div>
+
+          <div class="card skill-card" data-skill="other">💻 Others</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT -->
+    <section id="experience">
+      <h2>Project</h2>
+      <div class="grid">
+        <div class="card project-card" data-category="office">
+          <h3>Admin at Margalas Workshop</h3>
+          <p> Manage attendance employee and Calculate employee salaries with Excel </p>
+        </div>
+
+        <div class="card project-card" data-category="web">
+          <h3>
+            <a href="Project/Profile Perusahaan/Main.html" class="Prolink">
+              Book Company Profile <span>- Klik Here </span>
+            </a>
+          </h3>
+          <p> Create a simple static website for company, business, and organization </p>
+        </div>
+
+        <!-- <div class="card project-card" data-category="web">
+          <h3>
+              Library Information System
+          </h3>
+          <p> Create and develop Library information system for elementary school </p>
+        </div> -->
+
+        <!-- <div class="card project-card" data-category="web">
+          <h3>
+            Study Plan Registration System
+          </h3>
+          <p> Create and develop Library information system for university  </p>
+        </div> -->
+
+        <!-- <div class="card project-card" data-category="design">
+          <h3>Mobile UI Design</h3>
+          <p>Mendesain tampilan aplikasi modern menggunakan Figma.</p>
+        </div> -->
+
+        <!-- <div class="card project-card" data-category="languages">
+          <h3>Languages Competition</h3>
+          <p>Pakai bahasa mandarin buat cooking cooking</p>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certificates">
+      <h2>Certificates</h2>
+      <!-- office
+      design
+      web
+      languages -->
+      
+      <div class="grid">
+        <div class="card cert-card" data-category="languages">
+          <img src="PicPORT/Sertifikat/SertifikatBahasa/Mandarin.png" alt="" />
+          <h3> Basic Mandarin Courses </h3>
+        </div>
+
+        <div class="card cert-card" data-category="other">
+          <img src="PicPORT/Sertifikat/SertifikatLain/BVP.jpeg" alt="" />
+          <h3>Bon View Publishing Seminar</h3>
+        </div>
+
+        <div class="card cert-card" data-category="other">
+          <img src="PicPORT/Sertifikat/SertifikatLain/Cerpen.jpeg" alt="" />
+          <h3>Short Story Competition</h3>
+        </div>
+
+        <div class="card cert-card" data-category="other">
+          <img
+            src="PicPORT/Sertifikat/SertifikatLain/BesokAdalahKemarin.jpeg"
+            alt=""
+          />
+          <h3>Short Story Competition</h3>
+        </div>
+
+        <div class="card cert-card" data-category="other">
+          <img src="PicPORT/Sertifikat/SertifikatLain/Matirasa.jpeg" alt="" />
+          <h3>Poestry Collaboration </h3>
+        </div>
+
+        <div class="card cert-card" data-category="other">
+          <img src="PicPORT/Sertifikat/SertifikatLain/Puisi.jpeg" alt="" />
+          <h3> Poestry Collaboration  </h3>
+        </div>
+
+        <div class="card cert-card" data-category="other">
+          <img src="PicPORT/Sertifikat/SertifikatLain/Cerpen3.jpeg" alt="" />
+          <h3> Short Story Collaboration </h3>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- IMAGE POPUP -->
+    <div id="imagePopup" class="popup">
+      <span id="closePopup">&times;</span>
+      <img id="popupImage" src="" alt="Preview" />
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2026 Willy Wijaya | Welcome to my Portfolio</p>
+    </footer>
+
+    <script src="JsPORT/Portofolio.js"></script>
+  </body>
+
+  <!-- GOOGLE TRANSLATE -->
+  <div class="translate-container">
+    <div id="google_translate_element"></div>
+  </div>
+</html>

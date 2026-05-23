@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Admin Portfolio </title>
+<link rel="stylesheet" href="CSS/admin.css">
+</head>
+<body>
+
+<header>
+    <h1> Admin Panel </h1>
+    <a href="portofolio.html" class="btn">← Kembali</a>
+</header>
+
+<div class="container">
+    <h2>Tambah / Edit Project</h2>
+
+    <input type="hidden" id="editIndex">
+    <input type="text" id="title" placeholder="Judul Project">
+    <textarea id="desc" placeholder="Deskripsi"></textarea>
+
+    <select id="category">
+        <option value="">-- Pilih Bidang --</option>
+        <option>Microsoft Office</option>
+        <option>Design</option>
+        <option>Programming</option>
+    </select>
+
+    <label>Gambar (opsional)</label>
+    <input type="file" id="imageFile" accept="image/*">
+
+    <label>File Project (opsional)</label>
+    <input type="file" id="projectFile">
+
+    <button class="btn" onclick="saveProject()">Simpan</button>
+
+    <h2>Daftar Project</h2>
+    <div id="adminList"></div>
+</div>
+
+<script src="JS/admin.js"></script>
+</body>
+</html>
