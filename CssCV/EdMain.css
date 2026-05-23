@@ -159,17 +159,25 @@ strong {
 div.pilihan {
     display: flex;
     justify-content: center;
-    text-align: center;
-  
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 div.pilihan button {
-    padding: 16px;
-    margin: 0.3cm;
+    width: clamp(140px, 40vw, 120px);
+
+    padding: 10px 20px;
+
     border-radius: 16px;
     font-weight: bold;
     font-size: 16px;
-      cursor: pointer;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 section.media {
